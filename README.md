@@ -1,7 +1,9 @@
 # King-DOM-Library
-简易版本JavaScript操作DOM的方法
+
+简易版本 JavaScript 和 JQUERY 操作 DOM 的方法
 
 ## DOM 库
+
 ```
 //创建元素
 create(string)
@@ -59,4 +61,24 @@ next(node)
 
 //获取排行老几
 index(node)
+```
+
+## jQuery 库
+
+支持链式操作 api 和 jQuery 一样
+
+```
+//支持的api有
+get(index)
+appendTo(node)
+append(children)
+find(selector)
+each(fn)
+parent()
+children()
+html(string)
+text(string)
+addClass(className)
+print()
+end()
 ```
