@@ -27,4 +27,6 @@ console.log(jQuery("span").end())
 //find
 console.log(jQuery("span").find("span"))
 
-console.log(jQuery("body").append("小白"))
+console.log(jQuery("<p>这个是测试哦</p>").appendTo(jQuery("body")))
+
+console.log(jQuery("body").append(jQuery("<p>这个是测试哦append</p>")))

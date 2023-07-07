@@ -40,7 +40,6 @@ JQueryMethod.fn = JQueryMethod.prototype = {
   get(index){
     return this.elements[index]
   },
-  // todo 功能有待修复
   appendTo(node){
     if(node instanceof Element){
       this.each(el=>node.appendChild(el))
@@ -48,18 +47,14 @@ JQueryMethod.fn = JQueryMethod.prototype = {
       this.each(el=>node.get(0).appendChild(el))
     }
   },
-  // todo 功能有待修复
   append(children){
     if(children instanceof Element){
-      console.log(123)
       this.get(0).appendChild(children)
     }else if(children instanceof HTMLCollection){
-      console.log(4)
       for(let i=0;i<children.length;i++){
         this.get(0).appendChild(children[i])
       }
     }else if(children.jquery===true){
-      console.log(5)
       children.each(node=>this.get(0).appendChild(node))
     }
   },
